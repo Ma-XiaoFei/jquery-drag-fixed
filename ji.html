@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        html,body{
+            margin: 0;
+            padding: 50px;
+            height: 1000px;
+        }
+       
+
+       
+    </style>
+</head>
+
+<body>
+    <!-- <div id="hi"></div> -->
+    <div style="width: 200px;" id="displayImg">
+        <img src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3595140452,1077552905&fm=26&gp=0.jpg" alt="" style="width: 100%;">
+        <img src="https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4094400000,3327666375&fm=26&gp=0.jpg" alt="" style="width: 100%;">
+        
+        <img src="https://dss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3008142408,2229729459&fm=26&gp=0.jpg" alt="" style="width: 100%;">
+       
+
+    </div>
+    
+    <button id="btn">点击</button>
+    <script src="./jquery-1.11.3.min.js"></script>
+    <script src="./jq-drag.js"></script>
+    <script>
+
+$('#displayImg').dragImg()
+
+// displayImg.onclick = function(){
+//     let div = document.createElement('div');
+//     let id = this.getAttribute('id') + Math.random()
+//     div.innerHTML = `<div id=${id} style="cursor: move;
+//             position: fixed;
+//             top: 200px;
+//             left: 30px;
+//             height: 200px;
+//             width: 300px;
+//             background: #fff;
+//             user-select: none;
+//             box-sizing: border-box;
+//             height: 400px;
+//             width: 500px;
+//             padding: 6px;
+//             box-shadow: rgb(204, 204, 204) 1px 6px 20px;
+//             border-radius: 6px;">
+//         <div style="position: relative;">
+//         <img draggable="false" style="width: 100%;
+//             user-select: none;
+//             -webkit-user-select: none;
+//             display: block;" src="http://127.0.0.1:8066/photo/order/1902122591437083/2edf8a7d5bf9475f7f11c31b87a0e1c9" alt="">
+//         </div>
+//         <div style="background: #fff;">
+//             <a  id=${id}-rotate> 旋转！</a>
+//         </div>
+        
+//     </div>`;
+//     document.body.appendChild(div)
+//     let deg = 90;
+//         let step = 0
+//         document.getElementById(`${id}-rotate`).onclick = function(e, ){
+//             step ++;
+//             e.stopPropagation()
+//             console.log(this)
+//             document.documentElement.getElementsByTagName
+//             // let img = this.previousElementSibling
+//             let img = ko.getElementsByTagName('img')[0]
+//             img.style.transform = `rotate(${deg * step}deg)`;
+//         }
+//         let ko = document.getElementById(`${id}`)
+//         btn.onclick = function(){
+//             ko.style.display = 'block';
+//         }
+//         ko.onmousedown = function (e) { 
+//             let isHide = true;
+//             ko.onclick = function(){
+//                 console.log('jd')
+//                 if (isHide){
+//                     this.style.display = 'none'
+//                 }
+               
+//             }
+//             this.top = parseFloat(getComputedStyle(this).top);
+//             this.left = parseFloat(getComputedStyle(this).left);
+//             this.x = e.pageX;
+//             this.y = e.pageY;
+//             document.body.onmousemove = (e)=> {
+//                 isHide = false;
+//                 this.style.left = this.left + (e.pageX - this.x) + 'px';
+//                 this.style.top = this.top + (e.pageY - this.y) + 'px';
+//             }
+//             document.onmouseup = function(){
+//                 console.log(99999)
+//                 // isHide = true
+//                 document.body.onmousemove = null;
+//             }
+//         }
+
+// }
+
+
+      
+
+
+
+
+
+
+
+
+
+        // hi.onmousedown = function(e){
+
+        //     let isHide = true;
+        //     this.onclick = function(){
+        //         if (isHide){
+        //             this.style.display = 'none'
+        //         }
+               
+        //     }
+        //     this.winH = document.documentElement.clientHeight - 50;
+        //     this.winW = document.documentElement.clientWidth -50;
+        //     this.top = parseFloat(getComputedStyle(this).top);
+        //     this.left = parseFloat(getComputedStyle(this).left);
+        //     this.x = e.pageX;
+        //     this.y = e.pageY;
+        //     document.body.onmousemove = (e)=> {
+        //         isHide = false;
+        //         this.style.left = this.left + (e.pageX - this.x) + 'px';
+        //         this.style.top = this.top + (e.pageY - this.y) + 'px';
+        //     }
+        //     document.onmouseup = ()=>{
+        //        let timer = null;
+        //         console.log(99999)
+        //         // isHide = true
+        //         document.body.onmousemove = null;
+        //         console.log(parseFloat(getComputedStyle(this).top),'----')
+        //         timer = setInterval(()=>{
+                    
+        //             let top = parseFloat(getComputedStyle(this).top);
+        //             console.log(top, this.winH, '======================')
+        //             if (top >= this.winH){
+        //                 return
+        //                 top *= -1;
+        //                 top -= 10
+        //             } else {
+        //                 top += 10
+        //             }
+                        
+        //             this.style.top = top + 'px';
+        //         }, 17)
+                
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
