@@ -34,7 +34,7 @@ $.prototype.dragImg = function(){
                 display: block;" src=${imgUrl} alt="">
             </div>
             <div style="background: #fff; padding-top:5px">
-            <button id=${id}-rotate class="btn btn-primary"><i class="fa fa-repeat"></i></button>
+            <button id=${id}-rotate class="btn btn-primary">旋转</button>
                 
             </div>
             
